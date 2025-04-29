@@ -1,0 +1,14 @@
+# Core libraries
+numpy
+pandas
+scikit-learn
+datasets
+sentence-transformers
+yt-dlp
+openai-whisper
+ffmpeg-python
+
+# Optional but useful
+torch
+transformers
+gradio  # for web app demo
