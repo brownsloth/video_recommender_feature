@@ -95,21 +95,4 @@ Here’s a breakdown of how to evolve from prototype → production:
 
 ### 🌐 **D. Build a Minimal Web App (User Simulation)**
 
-Use **Gradio** or **Streamlit**:
-
-```python
-import gradio as gr
-
-def recommend_for_user(user_id):
-    profile = user_profiles.get(user_id)
-    if not profile:
-        return "User not found"
-    idxs, sims = recommend_videos(profile, video_embeddings)
-    results = [
-        f"{video_filenames[i]} (score: {s:.3f})\n{video_texts[i][:80]}..."
-        for i, s in zip(idxs, sims)
-    ]
-    return "\n\n".join(results)
-
-gr.Interface(fn=recommend_for_user, inputs="text", outputs="text").launch()
-```
+Use **Gradio** or **Streamlit**
